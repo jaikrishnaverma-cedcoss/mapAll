@@ -86,6 +86,9 @@ input{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
+.wrap{
+  flex-wrap: wrap;
+}
 
 .btn
 {
@@ -186,12 +189,18 @@ padding: 2%;
 .w33{
   width: 33%;
 }
+.w31{
+  width: 29.33%;
+}
 .w20
 {
   width: 20%;
 }
 .w60{
   width: 60%;
+}
+.w40{
+  width: 40%;
 }
 .p1{
   padding: 1% ;
@@ -351,6 +360,38 @@ select:focus,input:focus{
   color: white !important;
   text-decoration: none;
 }
+
+.lbggrey{
+  background-color: rgb(224, 235, 245);
+  min-width: 100px;
+}
+.bgWhite{
+  background-color: white;
+}
+.mt{
+  margin: 0.5% 0;
+}
+.cbox div{
+  min-height: 70px;
+  justify-content: center;
+}
+.cbox div div{
+  min-height: auto;
+}
+.bin{
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  min-width: 30px;
+  align-items: center;
+  padding: 6px;
+  border-radius: 50%;
+  border: none;
+  font-size: 15px;
+  margin: 0px;
+  background: #4a4aff;
+  color: white;
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
 
@@ -401,3 +442,4 @@ img{
   height: 600px;
   margin-top: 20px;
 }
+.cardhov:hover { transform: scale(1.1); }
