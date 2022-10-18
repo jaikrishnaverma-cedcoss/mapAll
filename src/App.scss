@@ -372,7 +372,7 @@ select:focus,input:focus{
   margin: 0.5% 0;
 }
 .cbox div{
-  min-height: 70px;
+  min-height: 50px;
   justify-content: center;
 }
 .cbox div div{
@@ -443,3 +443,12 @@ img{
   margin-top: 20px;
 }
 .cardhov:hover { transform: scale(1.1); }
+.coldiv{
+  height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    margin: 10px 5px;
+}
+.coldiv:hover{
+  transform: scale(1.5);
+}

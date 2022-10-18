@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import style from './index.module.scss'
 const Panel = () => {
-  let [css, setCss] = useState({magnifier:"",  link: { "fontSize": 20,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" },h1: { "fontSize": 20,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" }, h2: {"fontSize": 18 ,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" }, h3: {"fontSize": 15 ,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" }, p: {"fontSize": 13,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" }, all: {"fontSize": 30,"lineHeight":1.2,"letterSpacing":1 ,"textAlign":"left" },main:{"zoom":1,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left" } })
+  let [css, setCss] = useState({magnifier:"",  link: { "fontSize": 20,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":""},h1: { "fontSize": 20,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":"" }, h2: {"fontSize": 18 ,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":"" }, h3: {"fontSize": 15 ,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":"" }, p: {"fontSize": 13,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":"" }, all: {"fontSize": 30,"lineHeight":1.2,"letterSpacing":1 ,"textAlign":"left","color":"","backgroundColor":"" },main:{"zoom":1,"lineHeight":1.2,"letterSpacing":1,"textAlign":"left","color":"","backgroundColor":"" } })
   let [mode,setMode]=useState("all") 
 
   const Styler = (val,tag=mode) => {
@@ -46,7 +46,7 @@ const Panel = () => {
 
 
 
-      <div className="row m1 wrap brd5 bgWhite cbox p1" style={{ marginTop: "3%",maxHeight:"650px",width:"39%"}}>
+      <div className="row m1 wrap brd5 bgWhite cbox p1" style={{ marginTop: "3%",maxHeight:"845px",width:"39%"}}>
 
         <div className={`col lbggrey m1 p1 flexAIC w31 brd5`} onClick={()=>setMode('h1')}>
           <span>H1</span>
@@ -128,6 +128,51 @@ const Panel = () => {
         <div className={`col lbggrey m1 p1 flexAIC ${style.w38} brd5`} onClick={() => Styler({ "textAlign":"right"})}>
           <i class="fa fa-align-right" aria-hidden="true"></i>
           <span>Align Right</span>
+        </div>
+
+        <div className={`col lbggrey m1 p1 flexAIC brd5`} style={{width:"96%"}}>
+          <p>Adjust Text Colors</p>
+          <div className="row flexAIC">
+            <div className="coldiv" style={{backgroundColor:"#006fb4"}} onClick={() => Styler({color:"#006fb4"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#89399c"}} onClick={() => Styler({color:"#89399c"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#e00034"}} onClick={() => Styler({color:"#e00034"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#e26721"}} onClick={() => Styler({color:"#e26721"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#009f9f"}} onClick={() => Styler({color:"#009f9f"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#2b8230"}} onClick={() => Styler({color:"#2b8230"})}></div>
+            <div className="coldiv" style={{backgroundColor:"white"}} onClick={() => Styler({color:"white"})}></div>
+            <div className="coldiv" style={{backgroundColor:"black"}} onClick={() => Styler({color:"black"})}></div>
+          </div>
+          <p>Cancel</p>
+        </div>
+
+        <div className={`col lbggrey m1 p1 flexAIC brd5`} style={{width:"96%"}}>
+          <p>Adjust Title Colors</p>
+          <div className="row flexAIC">
+          <div className="coldiv" style={{backgroundColor:"#006fb4"}} onClick={() => Styler({backgroundColor:"#006fb4"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"#89399c"}} onClick={() => Styler({backgroundColor:"#89399c"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"#e00034"}} onClick={() => Styler({backgroundColor:"#e00034"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"#e26721"}} onClick={() => Styler({backgroundColor:"#e26721"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"#009f9f"}} onClick={() => Styler({backgroundColor:"#009f9f"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"#2b8230"}} onClick={() => Styler({backgroundColor:"#2b8230"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"white"}} onClick={() => Styler({backgroundColor:"white"},"h1")}></div>
+            <div className="coldiv" style={{backgroundColor:"black"}} onClick={() => Styler({backgroundColor:"black"},"h1")}></div>
+          </div>
+          <p>Cancel</p>
+        </div>
+
+        <div className={`col lbggrey m1 p1 flexAIC brd5`} style={{width:"96%"}}>
+          <p>Adjust Background Colors</p>
+          <div className="row flexAIC">
+          <div className="coldiv" style={{backgroundColor:"#006fb4"}} onClick={() => Styler({backgroundColor:"#006fb4"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#89399c"}} onClick={() => Styler({backgroundColor:"#89399c"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#e00034"}} onClick={() => Styler({backgroundColor:"#e00034"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#e26721"}} onClick={() => Styler({backgroundColor:"#e26721"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#009f9f"}} onClick={() => Styler({backgroundColor:"#009f9f"})}></div>
+            <div className="coldiv" style={{backgroundColor:"#2b8230"}} onClick={() => Styler({backgroundColor:"#2b8230"})}></div>
+            <div className="coldiv" style={{backgroundColor:"white"}} onClick={() => Styler({backgroundColor:"white"})}></div>
+            <div className="coldiv" style={{backgroundColor:"black"}} onClick={() => Styler({backgroundColor:"black"})}></div>
+          </div>
+          <p>Cancel</p>
         </div>
       </div>
 
