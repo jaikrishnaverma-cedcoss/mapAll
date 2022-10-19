@@ -204,7 +204,7 @@ const Panel = () => {
         <i class="m1 fa fa-sun-o" aria-hidden="true"></i>
           <span>Light Contrast</span>
         </div>
-        <div className="w31 col lbggrey m1 p1 flexAIC brd5"  onClick={() => Styler({filter: "contrast(1.8)"})}>
+        <div className="w31 col lbggrey m1 p1 flexAIC brd5"  onClick={() => Styler({filter: "contrast(2)"})}>
         <i class="m1 fa fa-adjust" aria-hidden="true"></i>
           <span>High Contrast</span>
         </div>

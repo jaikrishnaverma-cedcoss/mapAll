@@ -453,3 +453,27 @@ img{
 .coldiv:hover{
   transform: scale(1.5);
 }
+.Clock{
+  text-align: center;
+  font-family: 'Iceland';
+  font-size: 15rem;
+  margin: 1%;
+  color: white;
+
+    text-shadow: -1px 6px 0 rgb(255, 0, 0), -7px 1px 0 #0026ff, 1px -1px 0 #000, -1px -1px 0 #001cff;
+}
+.Clock:hover{
+  transform: scale(1.1);
+}
+.zone{
+  width: 30%;
+  height: 50px;
+  border: 2px solid #5da6ff;
+  margin: 2%;
+  font-size: 20px;
+}
+.rtr{
+  background-image: url('../public/asss.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
